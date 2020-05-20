@@ -1,5 +1,6 @@
-*
-!.gitignore
-!.bashrc
-!.bash_aliases
-!.profile
+/*
+!/.bashrc
+!/.bash_aliases
+!/.profile
+!/09_custom
+

@@ -20,3 +20,10 @@ alias sau="sudo apt update"
 alias sag="sudo apt upgrade"
 alias sai="sudo apt install"
 alias gac="git add -A && git commit -m"
+alias e.="xdg-open . &>/dev/null"
+alias c.="code . &>/dev/null"
+
+renv() {
+	export $(cat "$1" | grep -v '^\s*#' | xargs)
+}
+
