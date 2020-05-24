@@ -16,14 +16,17 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+# apt shorthand
 alias sau="sudo apt update"
 alias sag="sudo apt upgrade"
 alias sai="sudo apt install"
-alias gac="git add -A && git commit -m"
+
+# open a file explorer here
 alias e.="xdg-open . &>/dev/null"
-alias c.="code . &>/dev/null"
 
-renv() {
-	export $(cat "$1" | grep -v '^\s*#' | xargs)
-}
+# lazy dev
+alias gac="git add -A && git commit -m"
+alias c="code -r"
+alias cn="code -n"
 
+renv() { export $(cat "$1" | grep -v '^\s*#' | xargs); }
