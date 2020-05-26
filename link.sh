@@ -8,4 +8,4 @@ rm -f $HOME/.ssh/config
 ln -s $(pwd)/bashrc       $HOME/.bashrc
 ln -s $(pwd)/bash_aliases $HOME/.bash_aliases
 ln -s $(pwd)/profile      $HOME/.profile
-ln -s $(pwd)/ssh-config    $HOME/.ssh/config
+ln -s $(pwd)/ssh-config   $HOME/.ssh/config
