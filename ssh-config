@@ -6,6 +6,6 @@ Host github.com
 
 # ado
 Host ssh.dev.azure.com
-  HostName azure.com
+  HostName ssh.dev.azure.com
   User git 
   IdentityFile ~/.ssh/microsoft
